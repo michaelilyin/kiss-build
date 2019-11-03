@@ -11,15 +11,15 @@ gradlePlugin {
     plugins {
         create("kotlin-module") {
             id = "kotlin-module"
-            implementationClass = "ru.kiss.gradle.plugin.KotlinModulePlugin"
+            implementationClass = "net.kiss.gradle.plugin.KotlinModulePlugin"
         }
         create("kotlin-spring-boot-service") {
             id = "kotlin-spring-boot-service"
-            implementationClass = "ru.kiss.gradle.plugin.spring.KotlinSpringBootServicePlugin"
+            implementationClass = "net.kiss.gradle.plugin.spring.KotlinSpringBootServicePlugin"
         }
         create("kotlin-spring-boot-starter") {
             id = "kotlin-spring-boot-starter"
-            implementationClass = "ru.kiss.gradle.plugin.spring.KotlinSpringBootStarterPlugin"
+            implementationClass = "net.kiss.gradle.plugin.spring.KotlinSpringBootStarterPlugin"
         }
     }
 }

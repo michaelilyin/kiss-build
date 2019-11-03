@@ -1,9 +1,9 @@
-package ru.kiss.gradle.plugin.spring
+package net.kiss.gradle.plugin.spring
 
 import org.gradle.api.Project
 import org.gradle.api.tasks.bundling.Jar
 import org.springframework.boot.gradle.tasks.bundling.BootJar
-import ru.kiss.gradle.plugin.KotlinModulePlugin
+import net.kiss.gradle.plugin.KotlinModulePlugin
 
 class KotlinSpringBootStarterPlugin : KotlinModulePlugin() {
   override fun apply(target: Project) {

@@ -1,4 +1,4 @@
-package ru.kiss.gradle.plugin
+package net.kiss.gradle.plugin
 
 import io.gitlab.arturbosch.detekt.detekt
 import org.gradle.api.Plugin
