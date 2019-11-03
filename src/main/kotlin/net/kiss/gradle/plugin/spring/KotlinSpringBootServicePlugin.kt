@@ -5,6 +5,7 @@ import org.gradle.api.tasks.Copy
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 import net.kiss.gradle.plugin.KotlinModulePlugin
 
+@Suppress("unused")
 class KotlinSpringBootServicePlugin : KotlinModulePlugin() {
   override fun apply(target: Project) {
     super.apply(target)
@@ -20,13 +21,13 @@ class KotlinSpringBootServicePlugin : KotlinModulePlugin() {
 
       tasks.create("explode", Copy::class.java) {
         it.doFirst {
-          delete("${buildDir}/exploded")
+          delete("$buildDir/exploded")
         }
 
         val jar = tasks.getByName("bootJar")
 
         it.from(zipTree(jar.outputs.files.singleFile))
-        it.into("${buildDir}/exploded")
+        it.into("$buildDir/exploded")
       }
 
       tasks.withType(BootJar::class.java) {
