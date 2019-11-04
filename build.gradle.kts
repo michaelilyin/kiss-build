@@ -1,8 +1,8 @@
 plugins {
   kotlin("jvm") version "1.3.50"
   `java-gradle-plugin`
-  id("io.gitlab.arturbosch.detekt") version "1.0.1"
-  id("org.jlleitschuh.gradle.ktlint") version "9.1.0"
+//  id("io.gitlab.arturbosch.detekt") version "1.0.1"
+//  id("org.jlleitschuh.gradle.ktlint") version "9.1.0"
 }
 
 apply {
@@ -65,14 +65,13 @@ dependencies {
   //  id("org.jlleitschuh.gradle.ktlint") version "$ktlintVer"
   implementation("org.jlleitschuh.gradle:ktlint-gradle:$ktlintVer")
 }
-
-detekt {
-  config = files("$rootDir/config/detekt-config.yml")
-  buildUponDefaultConfig = true
-}
-
-ktlint {
-  ignoreFailures.set(true)
-  coloredOutput.set(false)
-}
-val task1 by tasks.registering
+//
+//detekt {
+//  config = files("$rootDir/config/detekt-config.yml")
+//  buildUponDefaultConfig = true
+//}
+//
+//ktlint {
+//  ignoreFailures.set(true)
+//  coloredOutput.set(false)
+//}
