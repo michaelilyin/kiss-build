@@ -1,9 +1,9 @@
 package net.kiss.gradle.plugin.spring
 
+import net.kiss.gradle.plugin.KotlinModulePlugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.bundling.Jar
 import org.springframework.boot.gradle.tasks.bundling.BootJar
-import net.kiss.gradle.plugin.KotlinModulePlugin
 
 @Suppress("unused")
 class KotlinSpringBootStarterPlugin : KotlinModulePlugin() {
