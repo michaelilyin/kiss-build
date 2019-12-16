@@ -36,6 +36,7 @@ class KotlinSpringBootServicePlugin : KotlinModulePlugin() {
 
       with(dependencies) {
         add("implementation", "org.jetbrains.kotlin:kotlin-reflect")
+        add("implementation", "org.jetbrains.kotlinx:kotlinx-coroutines-core")
 
         add("annotationProcessor", "org.springframework.boot:spring-boot-configuration-processor")
       }

@@ -38,7 +38,6 @@ open class KotlinModulePlugin : Plugin<Project> {
 
     with(target.dependencies) {
       add("implementation", "org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-      add("implementation", "org.jetbrains.kotlinx:kotlinx-coroutines-core")
     }
   }
 }
