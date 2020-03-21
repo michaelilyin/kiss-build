@@ -1,5 +1,5 @@
 plugins {
-  kotlin("jvm") version "1.3.50"
+  kotlin("jvm") version "1.3.70"
   `java-gradle-plugin`
 //  id("io.gitlab.arturbosch.detekt") version "1.0.1"
 //  id("org.jlleitschuh.gradle.ktlint") version "9.1.0"
