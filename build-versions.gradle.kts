@@ -1,5 +1,4 @@
 @file:Suppress("UNUSED_VARIABLE")
-
 allprojects {
     val kotlinVer by extra("1.3.70")
     val springbootDepPluginVer by extra("1.0.9.RELEASE")
